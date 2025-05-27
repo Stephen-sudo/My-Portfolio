@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Define CSS variables globally */
+@theme {
+  --color-lightHover: #fcf4ff;
+  --color-darkHover: #2a004a;
+  --color-darkTheme: #11001f;
+  --font-outfit: "Outfit", sans-serif;
+  --font-ovo: "Ovo", serif;
+  --shadow-black: 4px 4px 0 #000;
+  --shadow-white: 4px 4px 0 #fff;
+}
+
+/* Register custom utility/component classes */
+@layer components {
+  .heading {
+    @apply text-center text-lg mb-2;
+  }
+  .auto-grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+
+@layer base {
+  h4 {
+    @apply text-center text-lg mb-2;
+  }
+}
