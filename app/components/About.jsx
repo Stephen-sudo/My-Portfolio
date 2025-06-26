@@ -44,7 +44,7 @@ const About = ({ isDarkMode }) => {
             className="w-full rounded-3xl"
           />
         </motion.div>
-        <div
+        <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.8 }}
@@ -122,7 +122,7 @@ const About = ({ isDarkMode }) => {
               </motion.li>
             ))}
           </motion.ul>
-        </div>
+        </motion.div>
       </motion.div>
     </motion.div>
   );
