@@ -47,7 +47,7 @@ const Header = () => {
           href="#contact"
           className="px-10 py-3 border border-white rounded-full bg-black text-white flex items-center dark:bg-transparent gap-2"
         >
-          contact me <Image src={assets.right_arrow} className="w-4" />
+          contact me <Image src={assets.right_arrow} className="w-4" alt="" />
         </motion.a>
         <motion.a
           initial={{ y: 30, opacity: 0 }}

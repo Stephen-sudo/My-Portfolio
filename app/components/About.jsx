@@ -80,7 +80,7 @@ const About = ({ isDarkMode }) => {
               >
                 <Image
                   src={isDarkMode ? iconDark : icon}
-                  alt={title}
+                  alt="title"
                   className="w-7 mt-3"
                 />
                 <h3 className="my-4 dark:text-white font-semibold text-gray-700">
@@ -110,15 +110,10 @@ const About = ({ isDarkMode }) => {
           >
             {toolsData.map((tool, index) => (
               <motion.li
-                whileHover={{ scale: 1.1 }}
+                key={index}
                 className="border w-12 sm:w-14 border-gray-400 rounded-lg cursor-pointer flex items-center duration-500 aspect-square hover:-translate-y-1 justify-center"
               >
-                <Image
-                  key={index}
-                  src={tool}
-                  alt="tool"
-                  className="w-5 sm:w-7"
-                />
+                <Image src={tool} alt="tool" className="w-5 sm:w-7" />
               </motion.li>
             ))}
           </motion.ul>
